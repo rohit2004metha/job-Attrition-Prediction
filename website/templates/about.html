@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href=" {{ url_for('static', filename='css/about.css') }}"> 
+  <link rel="stylesheet" href="./../static/css/about.css"> 
+  <meta charset="utf-8">
+  <title> HR Insight</title>
+  <style>
+    /* Add animation styles */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    @keyframes myanimation {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    
+   
+    @keyframes myanimation {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    li {
+      animation-name: myanimation;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+
+
+
+    h1 {
+      margin: 0;
+      /* Apply animation to h1 tag */
+      animation: slideIn 1s ease-in-out;
+    }
+
+    /* Rest of your existing CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFAD7;
+    }
+
+    main {
+      padding: 20px;
+      color: #2E30A3;
+      background-color: #FFFAD7;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1> HR Insight</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/index">Home</a></li> 
+      <li><a href="/about">About</a></li>
+      <li><a href="/team">Team</a></li>
+    </ul>
+  </nav>
+
+  <main class="rohit">
+    <h2> HR Insight</h2>
+    <p class="about-para">
+      Data splitting: The first step is to split the data into training and testing sets using the train test split
+      function with a test size of 20% and a random state of 42. This ensures that the same split is used every time the
+      code is run.</p>
+
+      <p class="about-para">Model training: The code trains a Random Forest Classifier with 100 estimators and the same random state as the
+      data split. This model is used to predict employee attrition on the testing set.</p>
+
+      <p class="about-para">Model evaluation: The model's accuracy is evaluated using accuracy_score and classification report. Additionally,
+      a confusion matrix is plotted using seaborn's heatmap function. This step helps to understand how well the model
+      is performing in terms of precision, recall, and accuracy.</p>
+
+      <p class="about-para">Feature importance: The feature_importances_ attribute of the Random Forest Classifier is used to plot feature
+      importance. A bar chart is created using seaborn to visualize which features are most important in predicting
+      employee attrition.</p>
+
+      <p class="about-para">ROC curve and Precision-Recall curve: The final step is to plot the Receiver Operating Characteristic (ROC) curve
+      and the Precision Recall curve using scikit-learn's roc curve, auc, precision recall curve, and
+      average precision score functions. These curves help to understand the trade off between sensitivity and
+     
+</p>
+    <p><br><br></p>
+
+    <h2>Approaches to HR Insight</h2>
+    <ul>
+      <li>Analyzing employee data</li>
+      <li>Conducting exit interviews</li>
+      <li>Monitoring external factors</li>
+      <li>Building a strong company culture</li>
+    </ul>
+  </main>
+
+   <footer>
+      <p>&copy; 2023 Job Attrition Prediction</p>
+    </footer> 
+</body>
+
+</html>
