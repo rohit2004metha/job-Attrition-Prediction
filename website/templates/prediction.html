@@ -1,175 +1,238 @@
-<head>
-    <link rel="stylesheet" href="./../static/css/rohit2004.css">
-    <h1> HR Insight</h1>
-    <title> HR Insight</title>
-    <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="./style2.css"> -->
-  </head>
-  <form method="post">
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age"><br>
-  
-    <label for="business-travel">Business Travel:</label>
-    <select id="business-travel" name="business-travel">
-      <option value="non-travel">Non-Travel</option>
-      <option value="travel-frequently">Travel Frequently</option>
-      <option value="travel-rarely">Travel Rarely</option>
-    </select><br>
-  
-    <label for="daily-rate">Daily Rate:</label>
-    <input type="number" id="daily-rate" name="daily-rate"><br>
-  
-    <label for="department">Department:</label>
-    <select id="department" name="department">
-      <option value="human-resources">Human Resources</option>
-      <option value="marketing">Marketing</option>
-      <option value="research-development">Research & Development</option>
-      <option value="sales">Sales</option>
-    </select><br>
-  
-    <label for="distance-from-home">Distance From Home:</label>
-    <input type="number" id="distance-from-home" name="distance-from-home"><br>
-  
-    <label for="education">Education:</label>
-    <select id="education" name="education">
-      <option value="below-college">Below College</option>
-      <option value="college">College</option>
-      <option value="bachelor">Bachelor</option>
-      <option value="master">Master</option>
-      <option value="doctor">Doctor</option>
-    </select><br>
-  
-    <label for="education-field">Education Field:</label>
-    <select id="education-field" name="education-field">
-      <option value="human-resources">Human Resources</option>
-      <option value="life-sciences">Life Sciences</option>
-      <option value="marketing">Marketing</option>
-      <option value="medical">Medical</option>
-      <option value="other">Other</option>
-      <option value="technical-degree">Technical Degree</option>
-    </select><br>
-  
-    <label for="environment-satisfaction">Environment Satisfaction:</label>
-    <select id="environment-satisfaction" name="environment-satisfaction">
-      <option value="low">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-      <option value="very-high">Very High</option>
-    </select><br>
-  
-    <label for="gender">Gender:</label>
-    <input type="radio" id="gender-male" name="gender" value="male">
-    <label for="gender-male">Male</label>
-    <input type="radio" id="gender-female" name="gender" value="female">
-    <label for="gender-female">Female</label><br>
-  
-    <label for="hourly-rate">Hourly Rate:</label>
-    <input type="number" id="hourly-rate" name="hourly-rate"><br>
-  
-    <label for="job-involvement">Job Involvement:</label>
-    <select id="job-involvement" name="job-involvement">
-      <option value="low">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-      <option value="very-high">Very High</option>
-    </select><br>
-  
-    <label for="job-level">Job Level:</label>
-    <select id="job-level" name="job-level">
-      <option value="entry-level">Entry Level</option>
-      <option value="intermediate">Intermediate</option>
-      <option value="senior">Senior</option>
-      <option value="executive">Executive</option>
-    </select><br>
-  
-    <label for="job-role">Job Role:</label>
-    <select id="job-role" name="job-role">
-      <option value="healthcare-representative">Healthcare Representative</option>
-      <option value="human-resources">Human Resources</option>
-      <option value="laboratory-technician">Laboratory Technician</option>
-      <option value="manager">Manager</option>
-      <option value="manufacturing-director">Manufacturing Director</option>
-      <option value="research-scientist">Research Scientist</option>
-      <option value="sales-executive">Sales Executive</option>
-      <option value="sales-representative">Sales Representative</option>
-    </select><br>
-  
-    <label for="job-satisfaction">Job Satisfaction:</label>
-    <select id="job-satisfaction" name="job-satisfaction">
-      <option value="low">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-      <option value="very-high">Very High</option>
-    </select><br>
-  
-    <label for="marital-status">Marital Status:</label>
-    <input type="radio" id="marital-status-single" name="marital-status" value="single">
-    <label for="marital-status-single">Single</label>
-    <input type="radio" id="marital-status-married" name="marital-status" value="married">
-    <label for="marital-status-married">Married</label>
-    <input type="radio" id="marital-status-divorced" name="marital-status" value="divorced">
-    <label for="marital-status-divorced">Divorced</label><br>
-  
-    <label for="monthly-income">Monthly Income:</label>
-    <input type="number" id="monthly-income" name="monthly-income"><br>
-  
-    <label for="monthly-rate">Monthly Rate:</label>
-    <input type="number" id="monthly-rate" name="monthly-rate"><br>
-  
-    <label for="num-companies-worked">Number of Companies Worked:</label>
-    <input type="number" id="num-companies-worked" name="num-companies-worked"><br>
-  
-    <label for="overtime">Overtime:</label>
-    <input type="checkbox" id="overtime" name="overtime" value="yes"><br>
-  
-    <label for="percent-salary-hike">Percent Salary Hike:</label>
-    <input type="number" id="percent-salary-hike" name="percent-salary-hike"><br>
-  
-    <label for="performance-rating">Performance Rating:</label>
-    <select id="performance-rating" name="performance-rating">
-      <option value="low">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-      <option value="excellent">Excellent</option>
-    </select><br>
-  
-    <label for="relationship-satisfaction">Relationship Satisfaction:</label>
-    <select id="relationship-satisfaction" name="relationship-satisfaction">
-      <option value="low">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-      <option value="very-high">Very High</option>
-    </select><br>
-  
-    <label for="stock-option-level">Stock Option Level:</label>
-    <input type="number" id="stock-option-level" name="stock-option-level"><br>
-  
-    <label for="total-working-years">Total Working Years:</label>
-    <input type="number" id="total-working-years" name="total-working-years"><br>
-  
-    <label for="training-times-last-year">Training Times Last Year:</label>
-    <input type="number" id="training-times-last-year" name="training-times-last-year"><br>
-  
-    <label for="work-life-balance">Work Life Balance:</label>
-    <select id="work-life-balance" name="work-life-balance">
-      <option value="bad">Bad</option>
-      <option value="good">Good</option>
-      <option value="better">Better</option>
-      <option value="best">Best</option>
-    </select><br>
-  
-    <label for="years-at-company">Years at Company:</label>
-    <input type="number" id="years-at-company" name="years-at-company"><br>
-  
-    <label for="years-in-current-role">Years in Current Role:</label>
-    <input type="number" id="years-in-current-role" name="years-in-current-role"><br>
-  
-    <label for="years-since-last-promotion">Years Since Last Promotion:</label>
-    <input type="number" id="years-since-last-promotion" name="years-since-last-promotion"><br>
-  
-    <label for="years-with-curr-manager">Years with Current Manager:</label>
-    <input type="number" id="years-with-curr-manager" name="years-with-curr-manager"><br>
-  
-    <a href="/predict"><input type="submit" value="Prerdict"></a>
+{%extends "layout.html"%}
+{%block title%}
+    HR Insights-Employee Attrition Prediction
+{%endblock%}
 
-  </form>
+{%block main%}
+<main class="prediction-main">
+    <h2>HR Insights Employee Attrition Prediction</h2>
+    <br>
+    <form action="/predict" method="post">
+      <table>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="Age" min="18" max="85" required /></td>
+        </tr>
+        <tr>
+          <td>Business Travel:</td>
+          <td>
+            <select name="BusinessTravel">
+              <option value="0">Non-Travel</option>
+              <option value="1">Travel_Frequently</option>
+              <option value="2">Travel_Rarely</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Daily Rate:</td>
+          <td><input type="number" name="DailyRate" min="0" required /></td>
+        </tr>
+        <tr>
+          <td>Department:</td>
+          <td>
+            <select name="Department">
+              <option value="0">Human Resources</option>
+              <option value="1">Research &amp; Development</option>
+              <option value="2">Sales</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Distance From Home:</td>
+          <td><input type="number" name="DistanceFromHome" min="1" max="40" required /></td>
+        </tr>
+        <tr>
+          <td>Education:</td>
+          <td>
+            <select name="Education">
+              <option value="0">Below College</option>
+              <option value="1">College</option>
+              <option value="2">Bachelor</option>
+              <option value="3">Master</option>
+              <option value="4">Doctor</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Education Field:</td>
+          <td>
+            <select name="EducationField">
+              <option value="0">Human Resources</option>
+              <option value="1">Life Sciences</option>
+              <option value="2">Marketing</option>
+              <option value="3">Medical</option>
+              <option value="5">Technical Degree</option>
+              <option value="4">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Environment Satisfaction:</td>
+          <td>
+            <select name="EnvironmentSatisfaction">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+              <option value="0">High</option>
+              <option value="3">Very High</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <select name="Gender">
+                <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Hourly Rate:</td>
+          <td><input type="number" name="HourlyRate" min="30" required /></td>
+        </tr>
+        <tr>
+          <td>Job Involvement:</td>
+          <td>
+            <select name="JobInvolvement">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+              <option value="0">High</option>
+              <option value="3">Very High</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Job Level:</td>
+          <td><input type="number" name="JobLevel" min="1" max="5" required /></td>
+        </tr>
+        <tr>
+          <td>Job Role:</td>
+          <td>
+            <select name="JobRole">
+              <option value="0">Healthcare Representative</option>
+              <option value="1">Human Resources</option>
+              <option value="2">Laboratory Technician</option>
+              <option value="3">Manager</option>
+              <option value="4">Manufacturing Director</option>
+              <option value="5">Research Director</option>
+              <option value="6">Research Scientist</option>
+              <option value="7">Sales Executive</option>
+              <option value="8">Sales Representative</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Job Satisfaction:</td>
+          <td>
+            <select name="JobSatisfaction">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="0">High</option>
+              <option value="3">Very High</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Marital Status:</td>
+          <td>
+            <select name="MaritalStatus">
+                <option value="2">Single</option>
+                <option value="1">Married</option>
+              <option value="0">Divorced</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Monthly Income:</td>
+          <td><input type="number" name="MonthlyIncome" min="1009"  required /></td>
+        </tr>
+        <tr>
+          <td>Monthly Rate:</td>
+          <td><input type="number" name="MonthlyRate" min="2095" required /></td>
+        </tr>
+        <tr>
+          <td>Number of Companies Worked:</td>
+          <td><input type="number" name="NumCompaniesWorked" min="0" max="30" required /></td>
+        </tr>
+        <tr>
+          <td>Over Time:</td>
+          <td>
+            <select name="OverTime">
+                <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Percent Salary Hike:</td>
+          <td><input type="number" name="PercentSalaryHike" min="0" max="50" required /></td>
+        </tr>
+        <tr>
+          <td>Performance Rating:</td>
+          <td>
+            <select name="PerformanceRating">
+                <option value="4">Outstanding</option>
+                <option value="3">Excellent</option>
+                <option value="2">Good</option>
+                <option value="1">Low</option>
+            </select>
+          </td>
+        </tr>
+          <td>Relationship Satisfaction:</td>
+          <td>
+            <select name="RelationshipSatisfaction">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="0">High</option>
+              <option value="3">Very High</option>
+            </select>
+          </td>
+        </tr>
+        <!-- <tr>
+          <td>Standard Hours:</td>
+          <td><input type="int" name="StandardHours" min="0" required /></td>
+        </tr> -->
+        <tr>
+          <td>Stock Option Level:</td>
+          <td><input type="number" name="StockOptionLevel" min="0" max="3" required /></td>
+        </tr>
+        <tr>
+          <td>Total Working Years:</td>
+          <td><input type="number" name="TotalWorkingYears" min="0" max="50" required /></td>
+        </tr>
+        <tr>
+          <td>Training Times Last Year:</td>
+          <td><input type="number" name="TrainingTimesLastYear" min="0" max="200" required /></td>
+        </tr>
+        <tr>
+          <td>Work Life Balance:</td>
+          <td>
+            <select name="WorkLifeBalance">
+              <option value="0">Bad</option>
+              <option value="2">Good</option>
+              <option value="1">Better</option>
+              <option value="3">Best</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Years At Company:</td>
+          <td><input type="number" name="YearsAtCompany" min="0" max="60" required /></td>
+        </tr>
+        <tr>
+          <td>Years In Current Role:</td>
+          <td><input type="number" name="YearsInCurrentRole" min="0" max="60" required /></td>
+        </tr>
+        <tr>
+          <td>Years Since Last Promotion:</td>
+          <td><input type="number" name="YearsSinceLastPromotion" min="0" max="60" required /></td>
+        </tr>
+        <tr>
+          <td>Years With Current Manager:</td>
+          <td><input type="number" name="YearsWithCurrManager" min="0" max="60" required /></td>
+        </tr>
+      </table>
+      <input type="submit" value="Predict" />
+    </form>
+</main>
+{%endblock%}

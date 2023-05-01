@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
   <link rel="stylesheet" href=" {{ url_for('static', filename='css/about.css') }}"> 
   <link rel="stylesheet" href="./../static/css/about.css"> 
-  <meta charset="utf-8">
-  <title> HR Insight</title>
-  <style>
+  <meta charset="utf-8"> -->
+
+    <!-- <style>
     /* Add animation styles */
     @keyframes slideIn {
       from {
@@ -37,7 +37,7 @@
 
 
 
-    h1 {
+    h1,img {
       margin: 0;
       /* Apply animation to h1 tag */
       animation: slideIn 1s ease-in-out;
@@ -63,7 +63,8 @@
 
 <body>
   <header>
-    <h1> HR Insight</h1>
+    <div><img id='logo' src="{{ url_for('static', filename='assets/img/HR Insight_logo.png') }}" alt="logo"></div>
+    <div><h1> HR Insight</h1></div>
   </header>
 
   <nav>
@@ -72,8 +73,12 @@
       <li><a href="/about">About</a></li>
       <li><a href="/team">Team</a></li>
     </ul>
-  </nav>
+  </nav> -->
+{%extends "layout.html"%}
 
+{% block title %} About - HR Insight {%endblock%}
+
+{%block main%}
   <main class="rohit">
     <h2> HR Insight</h2>
     <p class="about-para">
@@ -107,10 +112,10 @@
       <li>Building a strong company culture</li>
     </ul>
   </main>
-
-   <footer>
+{%endblock%}
+   <!-- <footer>
       <p>&copy; 2023 Job Attrition Prediction</p>
     </footer> 
 </body>
 
-</html>
+</html> -->

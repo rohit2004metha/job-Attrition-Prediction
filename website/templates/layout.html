@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href=" {{ url_for('static', filename='css/style.css') }}"> 
+  <!-- <link rel="stylesheet" href="./../static/css/about.css">  -->
+  <meta charset="utf-8">
+  <title> {%block title %} {%endblock%} </title>
+  <style>
+    /* Add animation styles */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    @keyframes myanimation {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    
+   
+    @keyframes myanimation {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    li {
+      animation-name: myanimation;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+
+
+
+    h1,img {
+      margin: 0;
+      /* Apply animation to h1 tag */
+      animation: slideIn 1s ease-in-out;
+    }
+
+
+    main {
+      padding: 20px;
+      color: #2E30A3;
+      /* background-color: #FFFAD7; */
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><img id='logo-img' src="{{ url_for('static', filename='assets/img/HR Insight_logo.png') }}" alt="logo"></div>
+    <div><h1 id="logo-name"> HR Insight</h1></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/index">Home</a></li> 
+      <li><a href="/about">About</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/prediction">Predict Now</a></li>
+    </ul>
+  </nav>
+
+{% block main %} {%endblock%}
+
+</body>
+
+<footer>
+  <div id="footer-line"><br></div>
+  <div id="footer-main">
+  <p>&copy; 2023 HR Insight</p>
+  </div>
+</footer>
+
+</html>
