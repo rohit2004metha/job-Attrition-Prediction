@@ -17,7 +17,7 @@ def home():
 def index():
     return render_template("index.html")
 
-@app.route("/prediction/manual")
+@app.route("/prediction")
 def prediction():
     return render_template("prediction.html")
 
