@@ -14,7 +14,7 @@ body {
 header {
 	display: flex;
 	justify-content: center;
-    background-color: #21081a;
+    background-color: #655DBB;
     border: #000000;
     padding: 10px;
     /* text-align: center; */
@@ -48,7 +48,7 @@ header div{
 nav{
     /* align-items: center; */
     font-weight: bold;
-    background-color: #ff84a6;
+    background-color:#BFACE2;
     padding: 20px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
@@ -112,7 +112,8 @@ main {
     height:calc(10rem + 10px);
     width:calc(10rem + 10px);
     /* background:#000000; */
-    background:linear-gradient(35deg, rgb(134, 232, 220),deeppink,rgb(243, 255, 108));
+    background:linear-gradient(35deg, rgb(134, 232, 220),
+    #655DBB,rgb(243, 255, 108));
     border-radius:50%;
     z-index:-1;
     filter:blur(3px);
@@ -134,7 +135,7 @@ main {
   }
   
 footer {
-    background-color: #21081a;
+    background-color: #6457f8;
 	padding: 0px;
 	color: aliceblue;
     text-align: center;
@@ -147,15 +148,119 @@ footer {
 #footer-line{
     padding: 0px;
     /* background-color: rgb(255, 234, 0); */
-    background-color: #ff84a6 ;
+    background-color:#BFACE2 ;
 }
 
 #footer-main{
     padding: 10px 10px 10px 10px;
-    background-color: #21081a;
+    background-color:  #655DBB;
     height: fit-content;
 
 }
+/* form home page  */
+
+
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+article {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+article h3 {
+  font-size: 20px;
+}
+
+article p {
+  margin-bottom: 0;
+}
+
+article a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li h3 {
+  margin-bottom: 5px;
+}
+/* form pradic bootan */
+
+.gradient-color{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  font-size:20px;
+  height:10rem;
+  width:10rem;
+  border-radius:50%;
+  background:#000000;
+  /* box-shodow:inset 20px 20px 39px #670a10, */
+    /* inset -20px -20px 39px #1b263e; */
+  position:relative;
+  cursor:pointer;
+}
+
+.gradient-color::after{
+  content:'';
+  position:absolute;
+  left:-8px;
+  top:-8px;
+  height:calc(10rem + 10px);
+  width:calc(10rem + 10px);
+  background:linear-gradient(35deg, rgb(134, 232, 220),deeppink,rgb(243, 255, 108));
+  border-radius:50%;
+  z-index:-1;
+  filter:blur(3px);
+}
+.gradient-color:hover::after{
+      animation:rotate 1s linear infinite;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: rgb(255, 255, 255);
+}
+
+@keyframes rotate{
+    to {
+      transform:rotate(360deg);
+    }
+  }
+    
+
+
 
 
 /* From about page */
@@ -186,29 +291,36 @@ footer {
     animation-fill-mode: forwards;
   }
 
-
-
   h1,img {
     margin: 0;
     /* Apply animation to h1 tag */
     animation: slideIn 1s ease-in-out;
   }
 
+
+
 /* Team CSS */
 .container {
-  margin-top: 100px
+
+  padding: 5px;
+  margin: auto;
+  border-radius: 5ex;
+  background-color: BFACE2;
+  
 }
-.div{
-  padding: auto;
-  margin: 8%;
+body{
+  background-color: #ECF2FF;
 }
+
 
 .box1 img,
 .box1:after,
 .box1:before {
   max-width: 20%;
-  max-height: 300%;
-  transition: all .3s ease 0s
+  max-height: 30%;
+  transition: all .3s ease 0s;
+  width: 40rem;
+  height: 300rem;
 }
 
 .box1 .icon,
@@ -216,7 +328,7 @@ footer {
 .box3,
 .box4,
 .box5 .icon li a {
-  text-align: center
+  text-align: right;
 }
 
 .box10:after,
@@ -232,7 +344,7 @@ footer {
 .box6:after,
 .box7:after,
 .box7:before {
-  content: ""
+  content: right;
 }
 
 .box1,
@@ -288,7 +400,7 @@ body {
 
 .box1 .icon,
 .box1 .title {
-  margin: 0;
+  margin: 8px;
   position: absolute
 }
 
@@ -299,9 +411,9 @@ body {
 
 .box1:after,
 .box1:before {
-  height: 50%;
+  height: 500%;
   background: rgba(0, 0, 0, .5);
-  position: absolute;
+  position: auto;
   top: 0;
   left: 0;
   z-index: 1;
@@ -331,11 +443,11 @@ body {
 }
 
 .box1 .title {
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: #5bceff;
   text-transform: uppercase;
-  text-shadow: 0 0 1px #004cbf;
+  text-shadow: 0 0 1px #95accf;
   bottom: 10px;
   left: 10px;
   opacity: 0;
@@ -350,7 +462,7 @@ body {
 }
 
 .box1 .icon {
-  padding: 7px 5px;
+  padding: 7px 7px;
   list-style: none;
   background: #004cbf;
   border-radius: 0 0 0 10px;
@@ -370,9 +482,9 @@ body {
 }
 
 .box1 .icon li a {
-  display: block;
-  width: 35px;
-  height: 35px;
+  display: calc(98 67);
+  width: 10px;
+  height: 10px;
   line-height: 35px;
   border-radius: 10px;
   font-size: 18px;

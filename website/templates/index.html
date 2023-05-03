@@ -16,5 +16,42 @@
 
 {%extends "layout.html"%}
 {%block main%}
-<main><img src="{{ url_for('static', filename='assets/img/WIP.jpeg') }}" alt=""></main>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HR Insights</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+    <main>
+      <section>
+        <h2>Welcome to HR Insights</h2>
+        <p>HR Insights provides the latest news, insights, and research on HR trends and best practices.</p>
+        
+      </section>
+      <section>
+        <h2>Featured Article</h2>
+        <article>
+          <h3>Why Diversity and Inclusion are Essential for Business Success</h3>
+          <p>Learn how diversity and inclusion can improve your business performance and create a more inclusive workplace.</p>
+          <a href="#">Read More</a>
+        </article>
+      </section>
+      <section>
+        <h2>Upcoming Events</h2>
+        <ul>
+          
+          
+          <li>
+            <h3>Conference: HR Trends and Best Practices</h3>
+            <p>June 15-17, 2023</p>
+            <a href="#">Learn More</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+   
+ </body>
+</html>
 {%endblock%}
