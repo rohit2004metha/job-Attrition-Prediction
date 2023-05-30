@@ -201,10 +201,19 @@ footer {
   margin: auto;
   border-radius: 5ex;
   background-color: BFACE2;
+ 
   
 }
 body{
-  background-color: #ECF2FF;
+  background-color: #375dad;
+  align-self: center;
+  
+}
+div{
+  box-sizing: content-box;
+  
+
+
 }
 
 
@@ -216,6 +225,8 @@ body{
   transition: all .3s ease 0s;
   width: 40rem;
   height: 300rem;
+  position: relative;
+  
 }
 
 .box1 .icon,
@@ -224,6 +235,7 @@ body{
 .box4,
 .box5 .icon li a {
   text-align: right;
+  
 }
 
 .box10:after,
@@ -240,6 +252,7 @@ body{
 .box7:after,
 .box7:before {
   content: right;
+  
 }
 
 .box1,
@@ -260,25 +273,29 @@ body{
 .box6,
 .box7,
 .box8 {
-  overflow: hidden
+  overflow: hidden;
+ 
 }
 
 .box1 .title,
 .box10 .title,
 .box4 .title,
 .box7 .title {
-  letter-spacing: 1px
+  letter-spacing: 1px;
+  
 }
 
 .box3 .post,
 .box4 .post,
 .box5 .post,
 .box7 .post {
-  font-style: italic
+  font-style: italic;
+  
 }
 
 body {
-  background-color: #ffffff
+  background-color: #ffffff;
+  
 }
 
 .mt-30 {
@@ -295,46 +312,55 @@ body {
 
 .box1 .icon,
 .box1 .title {
-  margin: 8px;
-  position: absolute
+  margin: 11px;
+  position: absolute;
+
+  
 }
 
 .box1 {
   box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-  position: relative
+  position: relative;
+  
 }
 
 .box1:after,
 .box1:before {
   height: 500%;
   background: rgba(0, 0, 0, .5);
-  position: auto;
+  position: flex;
   top: 0;
   left: 0;
   z-index: 1;
   transform-origin: 100% 0;
-  transform: rotateZ(90deg)
+  transform: rotateZ(90deg);
+  
 }
 
 .box1:after {
-  top: auto;
+  top: left;
   bottom: 0;
-  transform-origin: 0 100%
+  transform-origin: 50% 100%;
+  
 }
 
 .box1:hover:after,
 .box1:hover:before {
-  transform: rotate3d(3)
+  transform: rotate3d(3);
+  
 }
 
 .box1 img {
   height: auto;
-  transform: scale(1) rotate(0)
+  transform: scale(1) rotate(0);
+ 
 }
 
 .box1:hover img {
   filter: sepia(80%);
-  transform: scale(1.1) rotate(10deg)
+  transform: scale(1.1) rotate(10deg);
+  
+
 }
 
 .box1 .title {
@@ -348,43 +374,51 @@ body {
   opacity: 0;
   z-index: 2;
   transform: scale(0);
-  transition: all .5s ease .2s
+  transition: all .5s ease .2s;
+  
 }
 
 .box1:hover .title {
   opacity: 1;
-  transform: scale(1)
+  transform: scale(1);
+ 
 }
 
 .box1 .icon {
-  padding: 7px 7px;
+  padding: 10px 10px;
   list-style: none;
-  background: #004cbf;
+  background: #000000;
   border-radius: 0 0 0 10px;
+  max-height: 80px;
   top: -100%;
   right: 0;
   z-index: 2;
-  transition: all .3s ease .2s
+  transition: all .3s ease .2s;
+ 
 }
 
 .box1:hover .icon {
-  top: 0
+  top: 0;
+  
 }
 
 .box1 .icon li {
   display: block;
-  margin: 10px 0
+  margin: 10px 0;
+  
 }
 
 .box1 .icon li a {
   display: calc(98 67);
   width: 10px;
   height: 10px;
-  line-height: 35px;
+  line-height: 3px;
   border-radius: 10px;
   font-size: 18px;
   color: #fff;
-  transition: all .3s ease 0s
+  transition: all .3s ease 0s;
+  
+  
 }
 
 .box2 .icon li a,
@@ -392,12 +426,19 @@ body {
 .box4 .icon li a:hover,
 .box5 .icon li a,
 .box6 .icon li a {
-  border-radius: 50%
+  border-radius: 50%;
+  
+}
+
+.linkedin-img{
+  max-height: 20px;
+ 
 }
 
 .box1 .icon li a:hover {
   color: #fff;
-  box-shadow: 0 0 10px #000 inset, 0 0 0 3px #fff
+  box-shadow: 0 0 10px #000 inset, 0 0 0 3px #fff;
+  
 }
 
 @media only screen and (max-width:990px) {
@@ -405,33 +446,3 @@ body {
       margin-bottom: 30px
   }
 }
-
-
-.container_result{
-  text-align: center;
-  margin-top: 50px;
-}
-
-.highlight {
-  color: rgb(101, 93, 187);
-  font-weight: bold;
-  animation: glow 3s ease-in-out infinite;
-}
-
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 10px rgba(101, 93, 187, 0.8);
-    color: rgb(101, 93, 187);
-  }
-  
-  50% {
-    text-shadow: 0 0 15px rgba(191, 172, 226, 0.8), 0 0 25px rgba(101, 93, 187, 0.8);
-    color: rgb(191, 172, 226);
-  }
-  
-  100% {
-    text-shadow: 0 0 10px rgba(101, 93, 187, 0.8);
-    color: rgb(105, 96, 199);
-  }
-}
-
